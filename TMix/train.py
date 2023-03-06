@@ -12,7 +12,7 @@ from transformers import *
 from torch.autograd import Variable
 from torch.utils.data import Dataset
 
-from read_data_AG_blc import *
+from read_data import *
 from mixtext import MixText
 from sklearn.metrics import f1_score, precision_recall_fscore_support
 
