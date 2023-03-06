@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from read_data import get_dataset
 import torch.utils.data as Data
-from model_armix import MixText
+from model_asmix import MixText
 from sklearn.metrics import f1_score, precision_recall_fscore_support
 import torch.nn as nn
 import torch.optim as optim
