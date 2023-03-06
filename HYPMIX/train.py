@@ -8,7 +8,7 @@ from sklearn.metrics import f1_score, precision_recall_fscore_support
 import torch.nn as nn
 import torch.optim as optim
 import pandas as pd
-from mixtext_poincare import MixText
+from model import MixText
 
 
 parser = argparse.ArgumentParser('MixText')
