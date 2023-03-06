@@ -65,7 +65,6 @@ def main():
     t_total = len(train_dataset)
 
     # set shuffle TRUE to avoid overfitting during training period , no need to set shuffle TRUE during testing period
-    # but why batch_size is not consistent
     train_loader = Data.DataLoader(dataset=train_dataset, batch_size=args.batch_size, shuffle=True)
     test_loader = Data.DataLoader(dataset=test_dataset, batch_size=512, shuffle=False)
 
