@@ -18,7 +18,7 @@ from sklearn.metrics import f1_score, precision_recall_fscore_support
 
 
 parser = argparse.ArgumentParser(description='Pytorch MixText')
-parser.add_argument('--data-path', type=str, default='../data/AG_News/', help='path to data folders')
+parser.add_argument('--data-path', type=str, default='../data/THS/', help='path to data folders')
 parser.add_argument('--n-labeled', type=int, default=10, help='number of labeled data')
 parser.add_argument('--unlabeled', type=int, default=5000, help='number of unlabeled data')
 parser.add_argument('--model', type=str, default='bert-base-uncased', help='pretrained model')
@@ -47,8 +47,8 @@ parser.add_argument('--margin', type=float, default=0.7)
 parser.add_argument('--lambda-u', type=float, default=0)
 parser.add_argument('--lambda-u-hinge', type=float, default=0)
 
-parser.add_argument('--comment', default='TMix change AG News imbalance', type=str)
-parser.add_argument('--save_filepath', default='../log/AG_News', type=str)
+parser.add_argument('--comment', default='TMix', type=str)
+parser.add_argument('--save_filepath', default='../log/THS', type=str)
 
 args = parser.parse_args()
 
