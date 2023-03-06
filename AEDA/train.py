@@ -1,7 +1,7 @@
 import os
 import argparse
 import torch
-from read_data_bert import *
+from read_data import *
 import torch.utils.data as data
 from model import VanillaBert
 import torch.nn as nn
